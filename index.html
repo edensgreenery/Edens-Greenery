@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Eden's Greenery — Premium Plants, Pots & Care</title>
+  <meta name="description" content="Shop premium indoor plants, modern planters, and plant-care essentials. Fast shipping, careful packaging, and friendly plant support." />
+  <link rel="canonical" href="https://YOUR-USERNAME.github.io/YOUR-REPO/" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Eden's Greenery — Premium Plants, Pots & Care" />
+  <meta property="og:description" content="Premium plants and planters delivered with care. Explore low-light, beginner, and pet-safe picks." />
+  <meta property="og:image" content="https://YOUR-USERNAME.github.io/YOUR-REPO/images/hero-1600x600.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Optional: faster font loading (matches CSS import) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Announcement / shipping bar -->
+  <div class="topbar" role="status">Free shipping over $75 • 30‑day guarantee • Packed with care</div>
+
+  <!-- Header -->
+  <header class="header container" role="banner">
+    <a class="logo" href="#home">Eden's Greenery</a>
+
+    <nav class="nav" role="navigation" aria-label="Primary">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Toggle menu">☰</button>
+      <ul id="main-menu" class="nav-list">
+        <li class="has-dropdown">
+          <a href="#shop" aria-haspopup="true" aria-expanded="false">Shop</a>
+          <div class="dropdown" role="menu" aria-label="Shop menu">
+            <div>
+              <h4>Shop by Care</h4>
+              <a href="#shop">Low Maintenance</a>
+              <a href="#shop">Beginner Friendly</a>
+              <a href="#shop">Pet Friendly</a>
+            </div>
+            <div>
+              <h4>Shop by Light</h4>
+              <a href="#shop">Low Light</a>
+              <a href="#shop">Bright Indirect</a>
+              <a href="#shop">Direct Sun</a>
+            </div>
+            <div>
+              <h4>Categories</h4>
+              <a href="#shop">Indoor Plants</a>
+              <a href="#shop">Planters</a>
+              <a href="#shop">Care Essentials</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="#care">Care Guides</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero" aria-label="Hero">
+    <div class="hero-content container">
+      <h1>Grow a calmer, greener home.</h1>
+      <p>Hand-selected plants shipped safely to your door.</p>
+      <div class="hero-ctas">
+        <a class="btn primary" href="#shop">Shop Plants</a>
+        <a class="btn ghost" href="#quiz">Take the Plant Quiz</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits / USPs -->
+  <section class="usps container" aria-label="Benefits">
+    <article><span class="emoji" aria-hidden="true">📦</span><h3>Safe Delivery</h3><p>Secure packaging, healthy on arrival.</p></article>
+    <article><span class="emoji" aria-hidden="true">🌱</span><h3>Care Made Simple</h3><p>Beginner tips & easy picks.</p></article>
+    <article><span class="emoji" aria-hidden="true">🚚</span><h3>Fast Shipping</h3><p>Free over $75, easy returns.</p></article>
+    <article><span class="emoji" aria-hidden="true">💬</span><h3>Plant Support</h3><p>Ask us anything, anytime.</p></article>
+  </section>
+
+  <!-- Collections / Category tiles -->
+  <section class="collections" id="shop" aria-label="Shop by collection">
+    <div class="container">
+      <h2 class="section-title">Shop by Collection</h2>
+      <div class="tiles">
+        <a class="tile" href="#"><img src="https://picsum.photos/seed/lowlight/800/600" alt="Low light plants" loading="lazy" decoding="async"><span>Low‑Light</span></a>
+        <a class="tile" href="#"><img src="https://picsum.photos/seed/beginner/800/600" alt="Beginner friendly plants" loading="lazy" decoding="async"><span>Beginner</span></a>
+        <a class="tile" href="#"><img src="https://picsum.photos/seed/petsafe/800/600" alt="Pet safe plants" loading="lazy" decoding="async"><span>Pet‑Safe</span></a>
+        <a class="tile" href="#"><img src="https://picsum.photos/seed/planters/800/600" alt="Modern planters" loading="lazy" decoding="async"><span>Planters</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter chips + Product grid -->
+  <section class="products" aria-label="Featured products">
+    <div class="container">
+      <div class="filters" role="tablist" aria-label="Filter products">
+        <button class="chip active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="chip" data-filter="low" role="tab">Low Light</button>
+        <button class="chip" data-filter="easy" role="tab">Easy Care</button>
+        <button class="chip" data-filter="pet" role="tab">Pet Friendly</button>
+      </div>
+
+      <div class="grid">
+        <article class="card" data-tags="easy low" data-description="A beautiful monstera perfect for bright, indirect light.">
+          <img src="https://picsum.photos/seed/monstera/640/480" alt="Monstera Deliciosa" loading="lazy" decoding="async">
+          <h3>Monstera Deliciosa</h3>
+          <p class="price">$49</p>
+          <button class="btn add" type="button">Add to cart</button>
+        </article>
+
+        <article class="card" data-tags="low pet" data-description="Tolerates low light and infrequent watering.">
+          <img src="https://picsum.photos/seed/zz/640/480" alt="ZZ Plant" loading="lazy" decoding="async">
+          <h3>ZZ Plant</h3>
+          <p class="price">$39</p>
+          <button class="btn add" type="button">Add to cart</button>
+        </article>
+
+        <article class="card" data-tags="easy" data-description="Beginner-friendly; thrives on neglect.">
+          <img src="https://picsum.photos/seed/sansevieria/640/480" alt="Snake Plant" loading="lazy" decoding="async">
+          <h3>Snake Plant</h3>
+          <p class="price">$29</p>
+          <button class="btn add" type="button">Add to cart</button>
+        </article>
+
+        <article class="card" data-tags="pet" data-description="Non-toxic and safe around cats and dogs.">
+          <img src="https://picsum.photos/seed/calathea/640/480" alt="Calathea" loading="lazy" decoding="async">
+          <h3>Calathea</h3>
+          <p class="price">$35</p>
+          <button class="btn add" type="button">Add to cart</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Press / Social proof -->
+  <section class="press" aria-label="As seen in">
+    <div class="container">
+      <h2 class="section-title">As Seen In</h2>
+      <ul class="logos">
+        <li>Good Housekeeping</li>
+        <li>Apartment Therapy</li>
+        <li>Vogue Living</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Care CTA -->
+  <section class="care" id="care" aria-label="Care resources">
+    <div class="care-inner container">
+      <h2>Care that grows with you</h2>
+      <p>Browse bite-size guides by light level, watering, pests, and more.</p>
+      <a class="btn primary" href="#care">Explore Care Guides</a>
+    </div>
+  </section>
+
+  <!-- Email signup -->
+  <section class="signup" aria-label="Newsletter">
+    <div class="container">
+      <h2 class="section-title">Get new arrivals & care tips</h2>
+      <form action="#" method="post" class="signup-form" aria-label="Email signup form">
+        <input type="email" name="email" placeholder="Enter your email" required aria-label="Email address">
+        <button class="btn primary" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about container" id="about" aria-label="About Eden's Greenery">
+    <h2>About Eden's Greenery</h2>
+    <p>We curate resilient, beautiful plants and modern planters so every home can feel calmer, greener, and more alive. Our team inspects, packs, and ships with care—backed by friendly support whenever you need it.</p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container" aria-label="Contact">
+    <h2>Contact Us</h2>
+    <form id="contact-form" action="#" method="post">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button class="btn primary" type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="cols container">
+      <div>
+        <h4>Shop</h4>
+        <a href="#shop">Indoor Plants</a>
+        <a href="#shop">Planters</a>
+        <a href="#shop">Care</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#">Return Policy</a>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <a href="#">Shipping</a>
+        <a href="#">FAQ</a>
+        <a href="#">Accessibility</a>
+      </div>
+    </div>
+    <p>© 2025 Eden's Greenery • All rights reserved</p>
+  </footer>
+
+  <!-- Optional modal structure (ready for future quick-view) -->
+  <div id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div id="modal-content">
+      <button id="modal-close" aria-label="Close modal">×</button>
+      <h3 id="modal-title">Product</h3>
+      <p id="modal-description">Details</p>
+    </div>
+  </div>
+
+  <!-- Organization JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Eden's Greenery",
+    "url": "https://YOUR-USERNAME.github.io/YOUR-REPO/",
+    "logo": "https://YOUR-USERNAME.github.io/YOUR-REPO/favicon.ico",
+    "sameAs": ["https://www.instagram.com/yourhandle","https://www.pinterest.com/yourhandle"]
+  }
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
