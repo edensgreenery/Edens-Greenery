@@ -1,0 +1,82 @@
+/* Base styles, header, hero, categories, footer ... (reuse your existing styles) */
+
+/* Add these new styles below or merge with your existing CSS */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.product-gallery {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.product {
+  cursor: pointer;
+  width: 220px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.product:hover,
+.product:focus {
+  box-shadow: 0 5px 15px rgb(0 0 0 / 0.3);
+  outline: none;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product figcaption {
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+/* Modal styles */
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#modal-content {
+  background: white;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 90%;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+#modal-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#modal-close:hover {
+  color: #f1c40f;
+}
