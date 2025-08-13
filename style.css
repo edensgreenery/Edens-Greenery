@@ -55,11 +55,30 @@ header nav ul li a:focus {
 
 /* Hero Section */
 .hero {
-  background: url('images/hero-1600x600.webp') no-repeat center center/cover;
-  height: 400px;
+  /* your new hero image path */
+  background-image: url('images/hero-1600x600.jpg'); /* or .webp */
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* shift focus toward the right where the person is */
+  background-position: 70% 50%;  /* try 80% if still too left; 'right center' also works */
+
+  /* make height responsive instead of fixed 400px */
+  min-height: clamp(320px, 45vw, 600px);
+
+  /* center the text without padding hacks */
+  display: grid;
+  place-items: center;
   text-align: center;
-  color: white;
-  padding-top: 150px;
+  color: #fff;
+  padding: 0 1rem;
+}
+
+/* optional: tweak position on narrow screens */
+@media (max-width: 768px){
+  .hero{ background-position: 60% 40%; }
+}
+
 }
 
 .hero h1 {
