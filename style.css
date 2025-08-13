@@ -74,3 +74,11 @@ img{max-width:100%;display:block}
   .grid{grid-template-columns:1fr}
   .usps{grid-template-columns:1fr}
 }
+/* HERO DEBUG — keep at end */
+.hero{
+  background-image: url('./images/hero-1600x600.jpg') !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: 75% 50% !important;
+  min-height: clamp(340px, 45vw, 600px);
+}
