@@ -24,7 +24,8 @@
   text-align: center;
 }
 /* FINAL FULL-BLEED FIX */
-.hero, .care {
+.hero, 
+.care {
   position: relative;
   width: 100vw;
   max-width: 100vw !important;
