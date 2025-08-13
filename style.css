@@ -76,7 +76,7 @@ img{max-width:100%;display:block}
 }
 /* HERO DEBUG — keep at end */
 .hero{
-  background-image: url('./images/hero-1600x600.jpg') !important;
+  background-image: url('images/hero-1600x600.webp') !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
   background-position: 75% 50% !important;
