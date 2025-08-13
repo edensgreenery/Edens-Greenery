@@ -74,11 +74,24 @@ img{max-width:100%;display:block}
   .grid{grid-template-columns:1fr}
   .usps{grid-template-columns:1fr}
 }
-/* HERO DEBUG — keep at end */
+/* HERO — exact 8:3 aspect ratio (final) */
 .hero{
-  background-image: url('images/hero-1600x600.webp') !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  background-position: 85% 50% !important;
-  min-height: clamp(340px, 45vw, 600px);
+  background-image: url('images/hero-1600x600.jpg') !important; /* keep !important if older rules exist */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 75% 50%;   /* adjust focus as needed */
+  aspect-ratio: 8 / 3;            /* 1600×600 */
+  min-height: 340px;              /* guardrail on tiny screens */
+  max-height: 60svh;              /* avoid giant heroes on huge screens */
+  height: auto !important;        /* overrides any earlier fixed heights */
+  padding-top: 0 !important;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: #fff;
 }
+
+@media (max-width: 768px){
+  .hero{ background-position: 60% 45%; }
+}
+
