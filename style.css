@@ -8,7 +8,7 @@
 }
 
 .hero {
-  background-image: url('./images/hero-1600x600.jpg');
+  background-image: url('images/hero-1600x600.webp');
   min-height: clamp(340px, 45vw, 600px);
   display: flex;
   align-items: center;
