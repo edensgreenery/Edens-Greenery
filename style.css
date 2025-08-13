@@ -55,7 +55,7 @@ header nav ul li a:focus {
 
 /* Hero Section */
 .hero {
-  background: url('https://picsum.photos/seed/hero-greenery/1600/600') no-repeat center center/cover;
+  background: url('images/background.png') no-repeat center center/cover;
   height: 400px;
   text-align: center;
   color: white;
