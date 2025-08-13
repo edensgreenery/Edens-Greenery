@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eden's Greenery – Premium Plants & Botanical Boutique</title>
+  <meta name="description" content="Discover Eden's Greenery – your boutique for premium indoor and outdoor plants, stylish pots, and plant care essentials." />
+  <meta name="keywords" content="plants, indoor plants, outdoor plants, plant boutique, plant pots, gardening, Eden's Greenery" />
+  <meta name="author" content="Eden's Greenery" />
+  <link rel="canonical" href="https://your-username.github.io/your-repo-name/" />
+  <meta property="og:title" content="Eden's Greenery – Premium Plants & Botanical Boutique" />
+  <meta property="og:description" content="Premium plants, stylish pots, and plant care essentials to transform your space." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-username.github.io/your-repo-name/" />
+  <meta property="og:image" content="https://picsum.photos/seed/hero-greenery/1200/630" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo"><a href="#home">Eden's Greenery</a></div>
+    <nav>
+      <ul>
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#shop" class="nav-link">Shop</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero" aria-label="Hero section with welcome message">
+      <h1>Transform Your Space with Beautiful Plants</h1>
+      <p>Shop Now for Fresh, High-Quality Plants</p>
+      <a href="#shop" class="cta-button">Shop Now</a>
+    </section>
+
+    <!-- Shop Section -->
+    <section id="shop" class="categories" aria-label="Shop categories and featured products">
+      <h2>Shop by Category</h2>
+      <div class="category-list">
+        <article class="category" tabindex="0" aria-describedby="desc-indoor">
+          <img src="https://picsum.photos/seed/indoor/600/400" alt="A selection of indoor plants" />
+          <h3>Indoor Plants</h3>
+          <p id="desc-indoor">Perfect plants for brightening up your home.</p>
+        </article>
+        <article class="category" tabindex="0" aria-describedby="desc-outdoor">
+          <img src="https://picsum.photos/seed/outdoor/600/400" alt="Outdoor garden plants" />
+          <h3>Outdoor Plants</h3>
+          <p id="desc-outdoor">Durable and beautiful plants for your garden.</p>
+        </article>
+        <article class="category" tabindex="0" aria-describedby="desc-pots">
+          <img src="https://picsum.photos/seed/pots/600/400" alt="Stylish plant pots" />
+          <h3>Plant Pots</h3>
+          <p id="desc-pots">Stylish and sustainable pots for every plant.</p>
+        </article>
+      </div>
+
+      <!-- Simple Product Gallery -->
+      <h2>Featured Products</h2>
+      <div class="product-gallery">
+        <figure tabindex="0" class="product" data-description="A beautiful monstera plant perfect for indoors.">
+          <img src="https://picsum.photos/seed/monstera/400/300" alt="Monstera Deliciosa plant" />
+          <figcaption>Monstera Deliciosa</figcaption>
+        </figure>
+        <figure tabindex="0" class="product" data-description="A lovely snake plant that’s easy to care for.">
+          <img src="https://picsum.photos/seed/snake-plant/400/300" alt="Snake Plant" />
+          <figcaption>Snake Plant</figcaption>
+        </figure>
+        <figure tabindex="0" class="product" data-description="Colorful flowering plant for brightening any room.">
+          <img src="https://picsum.photos/seed/flowering/400/300" alt="Flowering Plant" />
+          <figcaption>Flowering Plant</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about" aria-label="About Eden's Greenery">
+      <h2>About Eden's Greenery</h2>
+      <p>At Eden's Greenery, we believe in bringing nature into your home with beautiful, sustainable plants. We carefully curate our collection to ensure that every plant thrives in your space, offering you the best of nature.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" aria-label="Contact Eden's Greenery">
+      <h2>Contact Us</h2>
+      <form id="contact-form" action="#" method="post" aria-describedby="form-desc">
+        <p id="form-desc">Send us a message and we'll get back to you soon.</p>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required aria-required="true" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required aria-required="true" />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Eden's Greenery. All Rights Reserved.</p>
+    <div class="social-links" aria-label="Social media links">
+      <a href="#" aria-label="Instagram">Instagram</a> |
+      <a href="#" aria-label="Facebook">Facebook</a> |
+      <a href="#" aria-label="Pinterest">Pinterest</a>
+    </div>
+  </footer>
+
+  <!-- Modal for product descriptions -->
+  <div id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div id="modal-content">
+      <button id="modal-close" aria-label="Close modal">&times;</button>
+      <h3 id="modal-title"></h3>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
