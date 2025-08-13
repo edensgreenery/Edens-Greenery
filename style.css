@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background: #f8f7f3;
+    color: #222;
+}
+.top-bar {
+    background: #112015;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: white;
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.navbar a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+}
+.hero {
+    background: url('images/hero.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+.btn {
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px;
+}
+.btn.gold {
+    background: #c1a160;
+    color: white;
+}
+.btn.white {
+    background: white;
+    color: #222;
+}
+.features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+.feature-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    text-align: center;
+}
+.care-section {
+    background: url('images/care.jpg') center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.care-section::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+.care-overlay {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #112015;
+    color: white;
+}
