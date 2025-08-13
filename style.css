@@ -1,0 +1,25 @@
+
+/* Premium Realignment Styles */
+.hero, .care-section {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero {
+  background-image: url('./images/hero-1600x600.jpg');
+  min-height: clamp(340px, 45vw, 600px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.care-section {
+  background-image: url('./images/care-banner.jpg');
+  padding: 4rem 2rem;
+  color: white;
+  text-align: center;
+}
