@@ -33,7 +33,7 @@ body {
     font-weight: 500;
 }
 .hero {
-    background: url('images/hero.jpg') center/cover no-repeat;
+    background: url('images/hero-1600x600.webp') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
