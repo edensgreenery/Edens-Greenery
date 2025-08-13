@@ -56,7 +56,7 @@ header nav ul li a:focus {
 /* Hero Section */
 .hero {
   /* your new hero image path */
-  background-image: url('images/hero-1600x600.jpg'); /* or .webp */
+  background-image: url('images/hero-1600x600.webp'); /* or .webp */
   background-repeat: no-repeat;
   background-size: cover;
 
