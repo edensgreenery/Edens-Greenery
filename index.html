@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eden's Greenery — Premium Plants, Pots & Care</title>
+  <meta name="description" content="Shop premium indoor plants, stylish pots, and care essentials. Fast shipping, careful packaging, and friendly plant advice." />
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Announcement / shipping bar -->
+  <div class="topbar" role="status">Free shipping over $75 • 30‑day guarantee • Packed with care</div>
+
+  <!-- Header -->
+  <header class="header">
+    <a class="logo" href="#">Eden's Greenery</a>
+    <nav class="nav">
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+      <ul class="nav-list">
+        <li class="has-dropdown"><a href="#shop">Shop</a>
+          <div class="dropdown">
+            <div>
+              <h4>Shop by Care</h4>
+              <a href="#shop">Low Maintenance</a>
+              <a href="#shop">Beginner Friendly</a>
+              <a href="#shop">Pet Friendly</a>
+            </div>
+            <div>
+              <h4>Shop by Light</h4>
+              <a href="#shop">Low Light</a>
+              <a href="#shop">Bright Indirect</a>
+              <a href="#shop">Direct Sun</a>
+            </div>
+            <div>
+              <h4>Categories</h4>
+              <a href="#shop">Indoor Plants</a>
+              <a href="#shop">Planters</a>
+              <a href="#shop">Care Essentials</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="#care">Care Guides</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home" aria-label="Hero">
+    <div class="hero-content">
+      <h1>Grow a calmer, greener home.</h1>
+      <p>Hand‑selected plants shipped safely to your door.</p>
+      <div class="hero-ctas">
+        <a class="btn primary" href="#shop">Shop Plants</a>
+        <a class="btn ghost" href="#quiz">Take the Plant Quiz</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust strip / USPs -->
+  <section class="usps" aria-label="Benefits">
+    <article><span class="emoji">📦</span><h3>Safe Delivery</h3><p>Secure packaging, healthy on arrival.</p></article>
+    <article><span class="emoji">🌱</span><h3>Care Made Simple</h3><p>Beginner tips & easy picks.</p></article>
+    <article><span class="emoji">🚚</span><h3>Fast Shipping</h3><p>Free over $75, easy returns.</p></article>
+    <article><span class="emoji">💬</span><h3>Plant Support</h3><p>Ask us anything, anytime.</p></article>
+  </section>
+
+  <!-- Featured collections / category tiles -->
+  <section class="collections" id="shop" aria-label="Shop by collection">
+    <h2>Shop by Collection</h2>
+    <div class="tiles">
+      <a class="tile" href="#"><img src="https://picsum.photos/seed/lowlight/800/600" alt="Low light plants"><span>Low‑Light</span></a>
+      <a class="tile" href="#"><img src="https://picsum.photos/seed/beginner/800/600" alt="Beginner friendly plants"><span>Beginner</span></a>
+      <a class="tile" href="#"><img src="https://picsum.photos/seed/petsafe/800/600" alt="Pet friendly plants"><span>Pet‑Safe</span></a>
+      <a class="tile" href="#"><img src="https://picsum.photos/seed/planters/800/600" alt="Modern planters"><span>Planters</span></a>
+    </div>
+  </section>
+
+  <!-- Filter chips + product grid -->
+  <section class="products" aria-label="Featured products">
+    <div class="filters">
+      <button class="chip active" data-filter="all">All</button>
+      <button class="chip" data-filter="low">Low Light</button>
+      <button class="chip" data-filter="easy">Easy Care</button>
+      <button class="chip" data-filter="pet">Pet Friendly</button>
+    </div>
+    <div class="grid">
+      <article class="card" data-tags="easy low">
+        <img src="https://picsum.photos/seed/monstera/640/480" alt="Monstera Deliciosa">
+        <h3>Monstera Deliciosa</h3>
+        <p class="price">$49</p>
+        <button class="btn add">Add to cart</button>
+      </article>
+      <article class="card" data-tags="low pet">
+        <img src="https://picsum.photos/seed/zz/640/480" alt="ZZ Plant">
+        <h3>ZZ Plant</h3>
+        <p class="price">$39</p>
+        <button class="btn add">Add to cart</button>
+      </article>
+      <article class="card" data-tags="easy">
+        <img src="https://picsum.photos/seed/sansevieria/640/480" alt="Snake Plant">
+        <h3>Snake Plant</h3>
+        <p class="price">$29</p>
+        <button class="btn add">Add to cart</button>
+      </article>
+      <article class="card" data-tags="pet">
+        <img src="https://picsum.photos/seed/calathea/640/480" alt="Calathea">
+        <h3>Calathea</h3>
+        <p class="price">$35</p>
+        <button class="btn add">Add to cart</button>
+      </article>
+    </div>
+  </section>
+
+  <!-- Press / social proof -->
+  <section class="press" aria-label="As seen in">
+    <h2>As Seen In</h2>
+    <ul class="logos">
+      <li>Good Housekeeping</li>
+      <li>Apartment Therapy</li>
+      <li>Vogue Living</li>
+    </ul>
+  </section>
+
+  <!-- Care CTA -->
+  <section class="care" id="care" aria-label="Care resources">
+    <div class="care-inner">
+      <h2>Care that grows with you</h2>
+      <p>Browse bite‑size guides by light level, watering, pests, and more.</p>
+      <a class="btn primary" href="#care">Explore Care Guides</a>
+    </div>
+  </section>
+
+  <!-- Email signup -->
+  <section class="signup" aria-label="Newsletter">
+    <h2>Get new arrivals & care tips</h2>
+    <form action="#" method="post" class="signup-form">
+      <input type="email" placeholder="Enter your email" required>
+      <button class="btn primary" type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="cols">
+      <div><h4>Shop</h4><a href="#">Indoor Plants</a><a href="#">Planters</a><a href="#">Care</a></div>
+      <div><h4>Company</h4><a href="#about">About</a><a href="#contact">Contact</a><a href="#">Return Policy</a></div>
+      <div><h4>Help</h4><a href="#">Shipping</a><a href="#">FAQ</a><a href="#">Accessibility</a></div>
+    </div>
+    <p>© 2025 Eden's Greenery • All rights reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
