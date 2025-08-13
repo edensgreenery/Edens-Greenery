@@ -209,3 +209,22 @@ h2.section-title,.collections h2,.products h2,.press h2,.care h2,.signup h2,.abo
   .usps,.tiles,.grid,.category-list,.product-gallery{grid-template-columns:1fr}
   .hero{background-position:60% 45%}
 }
+/* === FULL-BLEED ALIGNMENT for HERO + CARE (Option A) === */
+.hero,
+.care{
+  position: relative;
+  /* break out of any container width */
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+
+  /* win over earlier container rules */
+  max-width: 100vw !important;
+  border-radius: 0 !important;   /* no rounded corners on full-bleed strips */
+  overflow: hidden;               /* tidy edges */
+}
+
+/* keep vertical rhythm on the care banner */
+.care{ margin: 3rem 0 !important; }
