@@ -79,6 +79,6 @@ img{max-width:100%;display:block}
   background-image: url('images/hero-1600x600.webp') !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
-  background-position: 75% 50% !important;
+  background-position: 85% 50% !important;
   min-height: clamp(340px, 45vw, 600px);
 }
