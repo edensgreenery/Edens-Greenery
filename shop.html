@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>Eden's Greenery - Shop</title>
+<link rel='stylesheet' href='style.css'>
+</head>
+<body>
+<main><h1>Shop</h1></main>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <h2>Eden’s Greenery</h2>
+      <p>Premium plants for your home & office</p>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="care.html">Care Guides</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-social">
+      <a href="#" aria-label="Instagram"><img src="images/instagram.svg" alt="Instagram"></a>
+      <a href="#" aria-label="Pinterest"><img src="images/pinterest.svg" alt="Pinterest"></a>
+    </div>
+    <div class="footer-newsletter">
+      <input type="email" placeholder="Your email" aria-label="Email">
+      <button>Subscribe</button>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Eden’s Greenery. All rights reserved.</p>
+  </div>
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
